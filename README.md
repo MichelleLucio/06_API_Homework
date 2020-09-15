@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Python API Homework - What's the Weather Like?
 
 ## Background
@@ -11,6 +10,9 @@ But, if pressed, how would you **prove** it?
 
 ![Equator](Images/equatorsign.png)
 
+## Summary of Data: 
+With the random list of cities that covered the entire globe, a relationship was found between city latitude and the maximum temperature of that city. The cities closest to the equator (latitude of 0) did had the higher max temperatures as compared to cities further away from the equator. The correlation coefficient was positive for the southern hemisphere and negative for the northern hemisphere. The characteristics of humidity, cloudiness and wind speed did not have a correlation with a city's latitude. These plots were distributed fairly evenly throughout the latitudes.
+
 ## Part I - WeatherPy
 
 In this example, you'll be creating a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, you'll be utilizing a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
@@ -22,8 +24,15 @@ Your first requirement is to create a series of scatter plots to showcase the fo
 * Cloudiness (%) vs. Latitude
 * Wind Speed (mph) vs. Latitude
 
-After each plot add a sentence or too explaining what the code is and analyzing.
+![Equator](output_data/ML_summary_temp.PNG)
 
+![Equator](output_data/ML_summary_humidity.PNG)
+
+![Equator](output_data/ML_summary_cloud.PNG)
+
+![Equator](output_data/ML_summary_wind.PNG)
+
+- - -
 Your second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
 
 * Northern Hemisphere - Temperature (F) vs. Latitude
@@ -35,10 +44,28 @@ Your second requirement is to run linear regression on each relationship, only t
 * Northern Hemisphere - Wind Speed (mph) vs. Latitude
 * Southern Hemisphere - Wind Speed (mph) vs. Latitude
 
-After each pair of plots explain what the linear regression is modeling such as any relationships you notice and any other analysis you may have.
 
-**Optional** You will be creating multiple linear regression plots. To optimize your code, write a function that creates the linear regression plots.
+![Equator](output_data/ML_linregress_temp_north.PNG)
 
+![Equator](output_data/ML_linregress_temp_south.PNG)
+
+
+![Equator](output_data/ML_linregress_humidity_north.PNG)
+
+![Equator](output_data/ML_linregress_humidity_south.PNG)
+
+
+![Equator](output_data/ML_linregress_cloud_north.PNG)
+
+![Equator](output_data/ML_linregress_cloud_south.PNG)
+
+
+![Equator](output_data/ML_linregress_wind_north.PNG)
+
+![Equator](output_data/ML_linregress_wind_south.PNG)
+
+
+ - - - 
 Your final notebook must:
 
 * Randomly select **at least** 500 unique (non-repeat) cities based on latitude and longitude.
@@ -54,7 +81,6 @@ Now let's use your skills in working with weather data to plan future vacations.
 
 * Create a heat map that displays the humidity for every city from the part I of the homework.
 
-  ![heatmap](Images/heatmap.png)
 
 * Narrow down the DataFrame to find your ideal weather condition. For example:
 
@@ -72,7 +98,6 @@ Now let's use your skills in working with weather data to plan future vacations.
 
 * Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
-  ![hotel map](Images/hotel_map.png)
 
 As final considerations:
 
@@ -102,10 +127,3 @@ As final considerations:
 * Remember that each coordinate will trigger a separate call to the Google API. If you're creating your own criteria to plan your vacation, try to reduce the results in your DataFrame to 10 or fewer cities.
 
 * Lastly, remember -- this is a challenging activity. Push yourself! If you complete this task, then you can safely say that you've gained a strong mastery of the core foundations of data analytics and it will only go better from here. Good luck!
-
-### Copyright
-
-Trilogy Education Services © 2019. All Rights Reserved.
-=======
-# 06_API_Homework
->>>>>>> 1a02d29eca5214b44e72bdc5934cbe185116ed82
